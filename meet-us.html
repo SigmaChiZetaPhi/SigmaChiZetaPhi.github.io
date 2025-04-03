@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sigma Chi Zeta Phi - Meet Us</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Executive Members Variables -->
+  <script>
+    // Change these variables to update the executive section across the site
+    /*ONLY CHANGE THE NAMES AND EXEC YEAR
+    // 
+    // 
+    */
+    const execData = {
+      year: "2024-2025 Exec",
+      members: [
+        { position: "Consul", name: "Christopher Hamilton" },
+        { position: "Pro Consul", name: "Diego Carillo" },
+        { position: "Annotator", name: "Jordan Garcia" },
+        { position: "Quaestor", name: "Luis Escamilla" },
+        { position: "Magister", name: "Kyle Richardson" },
+        { position: "Risk Manager", name: "Ian Carroll" },
+        { position: "Recruitment", name: "Jaden Moore" },
+        { position: "Philanthropy", name: "Matthew Grimes" },
+        { position: "Scholarship", name: "Weston Lingo" },
+        { position: "Kustos", name: "Gage Anderson" }
+      ]
+    };
+    //
+    //
+    //
+    //
+    //
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-left">
+      <img src="Images/crest.png" alt="Fraternity Logo" class="logo" />
+      <h1 class="fraternity-name">
+        Sigma Chi <span class="old-gold">Zeta Phi</span>
+      </h1>
+    </div>
+    <nav class="site-nav">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="meet-us.html" class="nav-link active">Meet Us</a></li>
+        <li><a href="contact-us.html" class="nav-link">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="site-content">
+    <!-- Executive Members Section -->
+    <!-- Caption Above the Hero Section -->
+    <section class="caption-section">
+      <h2 class="hero-caption">Our Chapter</h2>
+    </section>
+    <section class="exec-members">
+      <h2 class="hero-caption">Executive Members</h2>
+      <div class="exec-container">
+        <!-- Executive Photo with Overlay -->
+        <div class="exec-portrait">
+          <div class="exec-overlay">
+            <h3 class="exec-overlay-text" id="exec-year"></h3>
+          </div>
+          <img src="YearlyImages/Exec.jpeg" alt="Executive Team" class="exec-photo" />
+        </div>
+        
+        <!-- Member List -->
+        <div class="exec-list-container">
+          <div class="exec-list" id="exec-list">
+            <!-- JavaScript will generate executive rows here -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="donation">
+      <h2 class="hero-caption">Our Chapter History</h2>
+      <p>
+        Reestablished in 2008, the Zeta Phi chapter of Sigma Chi at New Mexico State University has established a legacy of Friendship, Justice, and Learning.
+      </p>
+      <div class="history-content">
+        <div class="history-images">
+          <img src="Images/NMSU.png" alt="History Image 1" />
+          <img src="Images/Flag.png" alt="History Image 2" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Script to populate Executive Members Section -->
+  <script>
+    // Insert the exec year into the overlay text
+    document.getElementById("exec-year").innerText = execData.year;
+
+    // Get the container for the exec list
+    const execList = document.getElementById("exec-list");
+
+    // Create and append the header row
+    const headerRow = document.createElement("div");
+    headerRow.classList.add("exec-row", "header");
+
+    const headerPosition = document.createElement("div");
+    headerPosition.classList.add("exec-position");
+    headerPosition.innerText = "Position";
+
+    const headerName = document.createElement("div");
+    headerName.classList.add("exec-name");
+    headerName.innerText = "Brother";
+
+    headerRow.appendChild(headerPosition);
+    headerRow.appendChild(headerName);
+    execList.appendChild(headerRow);
+
+    // Loop through each member and create a row for them
+    execData.members.forEach(member => {
+      const row = document.createElement("div");
+      row.classList.add("exec-row");
+
+      const posDiv = document.createElement("div");
+      posDiv.classList.add("exec-position");
+      posDiv.innerText = member.position;
+
+      const nameDiv = document.createElement("div");
+      nameDiv.classList.add("exec-name");
+      nameDiv.innerText = member.name;
+
+      row.appendChild(posDiv);
+      row.appendChild(nameDiv);
+      execList.appendChild(row);
+    });
+  </script>
+</body>
+</html>

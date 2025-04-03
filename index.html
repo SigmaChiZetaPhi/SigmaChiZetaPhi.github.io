@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sigma Chi Zeta Phi - Home</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Donation Variables -->
+  <script>
+    /*CHANGE THESE VARIABLES ONLY
+    *
+    *
+    *
+    */
+    var donationGoal = 50000;
+    var currentDonation = 31581.37;
+    /*ONLY THE ONES ABOS
+    *
+    *
+    */
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-left">
+      <img src="Images/crest.png" alt="Fraternity Logo" class="logo" />
+      <h1 class="fraternity-name">
+        Sigma Chi <span class="old-gold">Zeta Phi</span>
+      </h1>
+    </div>
+    <nav class="site-nav">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="meet-us.html" class="nav-link">Meet Us</a></li>
+        <li><a href="contact-us.html" class="nav-link">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="site-content">
+    <!-- Caption Above the Hero Section -->
+    <section class="caption-section">
+      <h2 class="hero-caption">Welcome!</h2>
+    </section>
+    
+    <!-- Hero Section with a Big Picture and Overlay -->
+    <section class="hero">
+      <div class="hero-overlay">
+        <h2 class="overlay-text">Sigma Chi Zeta Phi</h2>
+      </div>
+      <img src="YearlyImages/BidDay.JPG" alt="Fraternity Big Picture" class="hero-image" />
+    </section>
+
+    <!-- Donation Section with Progress Bar, Labels, and Huntsman Info -->
+    <section class="donation">
+      <h2 class="hero-caption">Huntsman Cancer Foundation</h2>
+      <p>
+        We proudly support the fight against cancer through the Huntsman Cancer Foundation. Founded by a Sigma Chi Alumni, John Huntsman, we are committed to this philanthropy.
+      </p>
+      <p>#GenToEnd</p>
+      <h2>Amount donated this year:</h2>
+      <div class="progress-wrapper">
+        <div class="progress-labels">
+          <span class="progress-label-min">$0</span>
+          <span class="progress-label-max">$50,000</span>
+        </div>
+        <div class="progress-container">
+          <!-- The progress bar and current donation marker will be updated via JavaScript -->
+          <div class="progress-bar">
+            <span class="progress-current"></span>
+          </div>
+        </div>
+      </div>
+        <!-- Huntsman Logo placed in the corner -->
+        <div class="huntsman-logo">
+            <p><br></p>
+            <img src="Images/Huntsman.PNG" alt="Huntsman Logo" />
+            </div>
+    </section>
+
+    <!-- Gallery Section: Photo Wall of the Brothers -->
+    <section class="gallery">
+      <h2 class="hero-caption">Our Brotherhood </h2>
+      <p>
+        <br>
+      </p>
+      <div class="gallery-grid">
+        <img src="YearlyImages/1.JPG" alt="Picture" />
+        <img src="YearlyImages/2.JPG" alt="Picture" />
+        <img src="YearlyImages/3.JPG" alt="Picture" />
+        <img src="YearlyImages/4.JPG" alt="Picture" />
+        <img src="YearlyImages/5.JPG" alt="Picture" />
+        <img src="YearlyImages/6.JPEG" alt="Picture" />
+        <img src="YearlyImages/7.JPEG" alt="Picture" />
+        <img src="YearlyImages/8.JPG" alt="Picture" />
+        <img src="YearlyImages/9.JPG" alt="Picture" />
+        <img src="YearlyImages/10.JPEG" alt="Picture" />
+        <img src="YearlyImages/11.JPEG" alt="Picture" />
+        <img src="YearlyImages/12.JPEG" alt="Picture" />
+        <img src="YearlyImages/13.JPEG" alt="Picture" />
+        <img src="YearlyImages/14.JPEG" alt="Picture" />
+        <img src="YearlyImages/15.JPEG" alt="Picture" />
+        <img src="YearlyImages/16.JPEG" alt="Picture" />
+        <img src="YearlyImages/17.JPEG" alt="Picture" />
+        <img src="YearlyImages/18.JPEG" alt="Picture" />
+        <img src="YearlyImages/19.JPEG" alt="Picture" />
+        <img src="YearlyImages/20.JPEG" alt="Picture" />
+        <img src="YearlyImages/21.JPEG" alt="Picture" />
+        <img src="YearlyImages/22.JPEG" alt="Picture" />
+      </div>
+    </section>
+  </main>
+
+  <!-- Script to update donation progress -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var percentage = (currentDonation / donationGoal) * 100;
+      var progressBar = document.querySelector('.progress-bar');
+      var progressCurrent = document.querySelector('.progress-current');
+
+      // Set the progress bar width based on donation percentage
+      progressBar.style.width = percentage + "%";
+
+      // Display the current donation amount
+      progressCurrent.innerText = "$" + currentDonation.toLocaleString();
+    });
+  </script>
+</body>
+</html>
