@@ -93,13 +93,52 @@ body {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  /* Improved Mobile Header */
   .site-header {
-    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
   }
-  
+
+  .fraternity-name {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .old-gold {
+    font-size: 1.4rem;
+  }
+
+  .logo {
+    width: 50px;
+    height: 70px;
+    margin: 0 auto 10px;
+  }
+
+  /* Mobile Navigation Fix */
+  .site-nav {
+    position: relative;
+    left: auto;
+    transform: none;
+    width: 100%;
+  }
+
   .nav-list {
-    justify-content: center;
     flex-wrap: wrap;
+    gap: 8px;
+    padding: 0 10px;
+  }
+
+  .nav-link {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  /* Ensure header elements stack properly */
+  .header-left {
+    flex-direction: column;
+    width: 100%;
   }
 }
 
