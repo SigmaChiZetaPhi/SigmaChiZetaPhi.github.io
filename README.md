@@ -66,7 +66,7 @@ Live Site:
 Automatically updates within 2 minutes at
 yourusername.github.io
 
-##⚠️ Critical Maintenance Rules
+## ⚠️ Critical Maintenance Rules
 1. 🚫 Never modify unauthorized files/sections
 2. 📁 Maintain original file formats
 3. 🔤 Preserve exact naming conventions
