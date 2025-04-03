@@ -42,7 +42,7 @@ Line 39:
 ```<a href="mailto:hamiltonchris2pher@gmail.com">Consul's Email</a>```
 Replace email address with the new one
 
-##👥 Executive Members Update
+## 👥 Executive Members Update
 File: meet-us.html
 
 Academic Year (Line 16):
