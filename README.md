@@ -52,23 +52,28 @@ Member Names (Lines 25-45):
 <div class="exec-name">Current Member Name</div>
 Only change names, NOT positions
 
-🚀 Publishing Changes
-Upload Changes to GitHub:
+🚀 Publishing Instructions
+GitHub Desktop:
 
-Desktop: Use GitHub Desktop → Commit & Push
+Commit & Push changes
 
-Web: Drag files to repository
+Web Interface:
 
-Automatic Update within 2 minutes at:
+Drag updated files to repository
+
+Live Site:
+
+Automatically updates within 2 minutes at
 yourusername.github.io
 
-❗ Important Rules
+⚠️ Critical Maintenance Rules
+1. 🚫 Never modify unauthorized files/sections
+2. 📁 Maintain original file formats
+3. 🔤 Preserve exact naming conventions
+4. 🔗 Keep URL structures unchanged
+5. 🖼️ Never alter image dimensions/crop ratios
 
-Never modify other files/sections
 
-Keep original file formats
-
-Maintain exact naming conventions
 
 Need Help? Contact: 505-385-2130
 Last Updated: 04/03/2025
