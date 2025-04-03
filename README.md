@@ -32,27 +32,27 @@
 ### 💰 **Donation Progress Update**
 **📄 File:** `index.html`  
 **🔍 Lines 16-17:**
-```javascript``
-var donationGoal = 50000;     // UPDATE ONLY THIS NUMBER
-var currentDonation = 31581.37; // UPDATE ONLY THIS NUMBER
+```javascript```
+```var donationGoal = 50000; ```    // UPDATE ONLY THIS NUMBER
+```var currentDonation = 31581.37;``` // UPDATE ONLY THIS NUMBER
 
-📧 President's Email Update
+##📧 President's Email Update
 File: contact-us.html
 Line 39:
-<a href="mailto:hamiltonchris2pher@gmail.com">Consul's Email</a>
-
+```<a href="mailto:hamiltonchris2pher@gmail.com">Consul's Email</a>```
 Replace email address with the new one
 
-👥 Executive Members Update
+##👥 Executive Members Update
 File: meet-us.html
 
 Academic Year (Line 16):
-<h2 class="overlay-text">2024-2025 Exec</h2>
+```<h2 class="overlay-text">2024-2025 Exec</h2>```
 Member Names (Lines 25-45):
-<div class="exec-name">Current Member Name</div>
+```<div class="exec-name">Current Member Name</div>```
 Only change names, NOT positions
 
-🚀 Publishing Instructions
+
+##🚀 Publishing Instructions
 GitHub Desktop:
 
 Commit & Push changes
@@ -66,7 +66,7 @@ Live Site:
 Automatically updates within 2 minutes at
 yourusername.github.io
 
-⚠️ Critical Maintenance Rules
+##⚠️ Critical Maintenance Rules
 1. 🚫 Never modify unauthorized files/sections
 2. 📁 Maintain original file formats
 3. 🔤 Preserve exact naming conventions
